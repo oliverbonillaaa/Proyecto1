@@ -2,92 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Página Sencilla - Proyecto</title>
-  <style>
-    :root{--accent:#0b76ef;--bg:#f7f9fc;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#153243}
-    header{background:linear-gradient(90deg,var(--accent),#2bb8ff); color:white; padding:28px 20px}
-    .container{max-width:960px;margin:22px auto;padding:0 16px}
-    nav{display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:700;letter-spacing:0.4px}
-    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(9,30,66,0.06);margin-bottom:18px}
-    h1{margin:0 0 6px;font-size:20px}
-    p.lead{margin:6px 0 0;opacity:0.9}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
-    .imgframe{height:200px;border-radius:10px;background:linear-gradient(180deg,#e6f4ff,#ffffff);display:flex;align-items:center;justify-content:center;color:#0b76ef;font-weight:700}
-    footer{padding:18px 0;text-align:center;color:#6b7c86;font-size:13px}
-    .actions{display:flex;gap:8px;margin-top:12px}
-    button{border:0;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;cursor:pointer}
-    a.btn-ghost{background:transparent;border:1px solid rgba(21,50,67,0.08);color:inherit;padding:9px 12px;border-radius:8px;text-decoration:none}
-    @media (max-width:780px){.hero{grid-template-columns:1fr;}.imgframe{height:160px}}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafetería Aurora — Coffee & Warmth</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">MiPágina • Proyecto</div>
-        <div>Ejemplo simple 1</div>
-      </nav>
+
+  <header class="header-hero">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Logo con Tipografía para Iniciales del Nombre Profesional Circular Limpio Elegante Blanco Negro (1).png" alt="Logo Cafetería Aurora">
+        <span>Cafetería Aurora</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>El rincón donde el café y la calma se encuentran</h1>
+      <p>Disfruta una experiencia acogedora con postres artesanales, bebidas especiales y un ambiente único diseñado para ti.</p>
+      <a href="#menu" class="btn-primary">Ver menú</a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card hero">
-      <div>
-        <h1>Artículo: Conservación de suelos agrícolas (versión corta)</h1>
-        <p class="lead">Una guía breve con medidas prácticas y fáciles de implementar para proteger la tierra y mejorar su productividad.</p>
+  <main>
 
-        <h3 style="margin-top:14px">Medidas principales</h3>
-        <ul>
-          <li>Rotación de cultivos para evitar la pérdida de nutrientes.</li>
-          <li>Uso de abonos orgánicos y compost para enriquecer el suelo.</li>
-          <li>Siembra en terrazas y contornos para reducir la erosión.</li>
-          <li>Manejo responsable del riego para prevenir la salinización.</li>
-        </ul>
-
-        <div class="actions">
-          <button id="btn-mostrar">Mostrar consejo</button>
-          <a class="btn-ghost" href="#" id="download">Descargar artículo</a>
+    <section id="menu" class="section menu-section">
+      <h2>Nuestro Menú</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg" alt="Latte especial">
+          <h3>Latte Aurora</h3>
+          <p>Una mezcla cremosa con un toque de canela.</p>
         </div>
-
-        <p id="consejo" style="margin-top:12px;display:none">Consejo: Planta barreras vegetales para frenar el viento y reducir la erosión superficial.</p>
+        <div class="menu-item">
+          <img src="8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg" alt="Capuchino">
+          <h3>Capuchino Clásico</h3>
+          <p>Aromático y espumoso, perfecto para cualquier momento.</p>
+        </div>
+        <div class="menu-item">
+          <img src="Template-Size-for-Blog-Photos-15.jpg" alt="Brownie casero">
+          <h3>Brownie Casero</h3>
+          <p>Chocolate intenso con textura suave.</p>
+        </div>
       </div>
-
-      <aside>
-        <div class="imgframe">IMAGEN</div>
-        <div style="margin-top:10px;font-size:14px;color:#3b4b57">Contacto: <strong>tu-email@ejemplo.com</strong></div>
-      </aside>
     </section>
 
-    <section class="card">
-      <h2>Acerca de esta página</h2>
-      <p>Esta plantilla es una página estática simple que puedes editar con cualquier editor (VS Code, Notepad++, Sublime). Está pensada para proyectos escolares y demostraciones.</p>
+    <section id="galeria" class="section gallery-section">
+      <h2>Ambiente Cozy</h2>
+      <div class="gallery-grid">
+        <img src="img/local1.jpg" alt="Interior cafetería">
+        <img src="img/local2.jpg" alt="Café en mesa de madera">
+        <img src="img/local3.jpg" alt="Postres artesanales">
+        <img src="img/local4.jpg" alt="Espacio de estudio cozy">
+      </div>
     </section>
+
+    <section id="contacto" class="section contact-section">
+      <h2>Contacto</h2>
+      <p>📍 Av. Central #85, Santo Domingo</p>
+      <p>📞 809-555-4242</p>
+      <p>✉️ cafeteriaaurora@cozy.com</p>
+      <a class="btn-secondary" id="download">Descargar menú completo</a>
+    </section>
+
   </main>
 
   <footer>
-    Página creada para práctica • Abre <strong>index.html</strong> en tu navegador para ver los cambios.
+    <p>© 2025 Cafetería Aurora — Creado con pasión por el café.</p>
   </footer>
 
-  <script>
-    document.getElementById('btn-mostrar').addEventListener('click', function(){
-      var p = document.getElementById('consejo');
-      p.style.display = p.style.display === 'none' ? 'block' : 'none';
-    });
-
-    // Descargar el artículo como archivo de texto
-    document.getElementById('download').addEventListener('click', function(e){
-      e.preventDefault();
-      var texto = 'Artículo: Conservación de suelos agrícolas\n\nMedidas:\n- Rotación de cultivos\n- Uso de abonos orgánicos\n- Siembra en terrazas\n- Manejo responsable del riego\n\nConsejo: Planta barreras vegetales.';
-      var blob = new Blob([texto], {type:'text/plain;charset=utf-8'});
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement('a');
-      a.href = url; a.download = 'articulo-conservacion-suelos.txt';
-      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
