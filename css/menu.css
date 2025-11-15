@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #faf6f2;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    padding: 20px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d49b6f;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('img/cafe-bg.jpg') center/cover no-repeat;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* MENU */
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 50px;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #d49b6f;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    margin-top: 40px;
+}
