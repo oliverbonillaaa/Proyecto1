@@ -9,26 +9,38 @@
   --white:#ffffff;
 }
 
-*{margin:0; padding:0; box-sizing:border-box;}
+*{
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box;
+}
+
+
 body{
   font-family:'Poppins', sans-serif;
   background:var(--bg);
   color:var(--text);
 }
 
-/* ===== HEADER + NAVBAR ===== */
+
 .header-hero{
   background:url('/static/img/premium_photo-1675237625862-d982e7f44696.jpeg') center/cover no-repeat;
   padding:40px 0 120px;
   position:relative;
   color:white;
 }
+
+
 .header-hero::after{
   content:"";
   position:absolute;
   top:0;left:0;right:0;bottom:0;
   background:rgba(0,0,0,0.45);
 }
+
+
+
+
 .navbar{
   position:relative;
   z-index:2;
@@ -39,6 +51,11 @@ body{
   align-items:center;
   padding:0 20px;
 }
+
+
+
+
+
 .logo{
   display:flex;
   align-items:center;

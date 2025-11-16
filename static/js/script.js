@@ -1,6 +1,6 @@
 // --- INTERACCIÓN PROFESIONAL PARA CAFETERÍA AURORA ---
 
-// ⭐ Navegación responsive (abre/cierra menú en móvil)
+
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 
@@ -8,7 +8,7 @@ navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("open");
 });
 
-// ⭐ Animación de aparición suave al hacer scroll
+
 const elementosAnimados = document.querySelectorAll(".animar");
 
 const observer = new IntersectionObserver((entries) => {
@@ -21,11 +21,13 @@ const observer = new IntersectionObserver((entries) => {
 
 elementosAnimados.forEach((el) => observer.observe(el));
 
-// ⭐ Efecto de ampliación para la galería
+
 const imgs = document.querySelectorAll(".img-galeria");
 const modal = document.createElement("div");
 modal.id = "modal-img";
 document.body.appendChild(modal);
+
+
 
 imgs.forEach((img) => {
   img.addEventListener("click", () => {
@@ -44,7 +46,7 @@ modal.addEventListener("click", () => {
   modal.classList.remove("open");
 });
 
-// ⭐ Botón para descargar el menú en TXT
+
 const downloadBtn = document.getElementById("download-menu");
 
 if (downloadBtn) {
